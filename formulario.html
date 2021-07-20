@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+  <div >
+      <h1 id="titulo">Cadastro de Gamers</h1>
+      <p id="subtitulo">Preencha com suas informações</p>
+  <br>
+    </div>  
+    <form>
+    <fieldset class="grupo">
+        
+        <div class="campo">
+            <label>Nome</label>
+        <input type="text" name="nome" id="nome">
+        </div>
+        <div class="campo">
+            <label>Sobrenome</label>
+            <input type="text" name="Sobrenome" id="Sobrenome">
+        </div>
+    </fieldset>
+    
+    <div class="campo">
+        <label>Email</label>
+        <input type="email" name="email" id="email" >
+    </div>
+    
+    <div class="campo">   
+        <label >Qual placa de vídeo você usa?</label>
+        <LAbel>
+            <input type="radio" name="placa" value="GTX 580" checked>GTX 580
+        </LAbel>
+        <LAbel>
+            <input type="radio" name="placa" value="GTX 1060">GTX 1060
+        </LAbel>
+        <LAbel>
+            <input type="radio" name="placa" value="RTX">RTX 3060
+        </LAbel>
+     </div>
+    
+     <div class="campo">
+        <label>Memória Ram</label>
+        <select id="Memória Ram">
+            <option selected disable value="">Selecione</option>
+            <option>2g</option>
+            <option>4g</option>
+            <option>8g</option>
+            <option>16g</option>
+            <option>32g</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Quantos Hz te o seu monitor</label>
+            <input type="checkbox" id="Hz" name="Monitor" value="60Hz">
+            <label for="Monitor">60Hz</label>
+            <input type="checkbox" id="Hz" name="Monitor1" value="144Hz">
+            <label for="Monito1">6144z</label>
+            <input type="checkbox" id="Hz" name="Monitor2" value="244Hz">
+            <label for="Monitor2">244Hz</label>
+        </div>
+        </fieldset>
+        <div class="campo">
+            <label>Você já teve algum problema com o seu computador? </label>
+            <textarea row="6" style="width: 26cm" id="problemas" name="problemas"></textarea>
+        </div>
+        <button type="submit">Concluido</button>
+    </form>
+</body>
+</html>
