@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="scream"> 
 </head>
 <body>
   <div >
@@ -16,22 +17,22 @@
     <fieldset class="grupo">
         
         <div class="campo">
-            <label>Nome</label>
-        <input type="text" name="nome" id="nome">
+            <labelfor for="nome"><strong>Nome</strong></label>
+        <input type="text" name="nome" id="nome" required>
         </div>
         <div class="campo">
-            <label>Sobrenome</label>
-            <input type="text" name="Sobrenome" id="Sobrenome">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="Sobrenome" id="Sobrenome" required>
         </div>
     </fieldset>
     
     <div class="campo">
-        <label>Email</label>
-        <input type="email" name="email" id="email" >
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required>
     </div>
     
     <div class="campo">   
-        <label >Qual placa de vídeo você usa?</label>
+        <label ><strong>Qual placa de vídeo você usa?</strong></label>
         <LAbel>
             <input type="radio" name="placa" value="GTX 580" checked>GTX 580
         </LAbel>
@@ -44,7 +45,7 @@
      </div>
     
      <div class="campo">
-        <label>Memória Ram</label>
+        <label><strong>Memória Ram</strong></label>
         <select id="Memória Ram">
             <option selected disable value="">Selecione</option>
             <option>2g</option>
@@ -57,8 +58,8 @@
 
     <div class="campo">
         <fieldset class="grupo">
-            <div class="campo">
-                <label>Quantos Hz te o seu monitor</label>
+            <div id="check">
+                <label><strong>Quantos Hz te o seu monitor</strong></label>
             <input type="checkbox" id="Hz" name="Monitor" value="60Hz">
             <label for="Monitor">60Hz</label>
             <input type="checkbox" id="Hz" name="Monitor1" value="144Hz">
@@ -68,10 +69,10 @@
         </div>
         </fieldset>
         <div class="campo">
-            <label>Você já teve algum problema com o seu computador? </label>
+            <label><strong>Você já teve algum problema com o seu computador?</strong></label>
             <textarea row="6" style="width: 26cm" id="problemas" name="problemas"></textarea>
         </div>
-        <button type="submit">Concluido</button>
+        <button class="botao" type="submit">Concluido</button>
     </form>
 </body>
 </html>
