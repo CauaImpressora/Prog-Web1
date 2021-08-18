@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumentar Tamanho</title>
+    <script>
+        let tamanho = 2;
+        function atualizatamanho (){
+            const h1 = document.querySelector("h1");
+            h1.style.fontSize = `${tamanho}em`;
+        }
+        function aumentatitulo(){
+            tamanho += 0.5;
+            atualizatamanho()
+        }
+        function diminuititulo(){
+            if (tamanho >0){
+                tamanho-= 0.5;
+                atualizatamanho()
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="aumentatitulo()">+</button>
+    <button onclick="diminuititulo()">-</button>
+    <h1>Funcionou!!!!Gloria</h1>
+</body>
+</html>
