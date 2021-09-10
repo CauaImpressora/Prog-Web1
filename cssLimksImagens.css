@@ -1,0 +1,64 @@
+ul{
+    list-style-type:lower-greek;
+    background-color:rgb(148, 4, 252);
+    list-style-position: inside;
+}
+ul li {
+    background-color:rgb(255, 1, 128);
+}
+ol{
+    background-color:rgb(148, 4, 252);
+    list-style-position: inside;
+}
+ol li {
+    background-color:rgb(255, 1, 128);
+}
+
+h1{
+    text-align: center;
+    background-color:rgb(255, 1, 128);
+    color:rgb(18, 1, 29);
+}
+
+h2{
+    text-align: center;
+    background-color:rgb(255, 1, 128);
+    color:rgb(18, 1, 29);
+}
+
+h3{
+    text-align: center;
+    background-color:rgb(255, 1, 128);
+    color:rgb(18, 1, 29);
+}
+
+li{
+    color:rgb(18, 1, 29);
+}
+
+body{
+    background-image: url("img/sakura.jpg");
+    background-size: 100%;
+}
+
+
+.figuras {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.figuras figure img {
+    width: 250px;
+}
+.figuras figure{
+    margin: auto;
+}
+.figuras figure figcaption {
+    font-family:fantasy;
+    font-size: large;
+    text-align: center;
+}
+section figcaption{
+    color:rgb(18, 1, 29) ;
+}
